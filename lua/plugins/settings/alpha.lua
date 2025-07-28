@@ -10,8 +10,10 @@ dashboard.section.header = art.header
 -- Menu items
 dashboard.section.buttons.val = {
   dashboard.button("f", "󰈞  Find file", "<cmd>Telescope find_files<CR>"),
-  dashboard.button("r", "󰁯  Recent session", "<cmd>SessionRestore<CR>"),
-  dashboard.button("c", "  Configuration", "<cmd>e ~/.config/nvim/<CR>"),
+  dashboard.button("n", "󰈔  New file", "<cmd>ene<CR>"),
+  dashboard.button("r", "󰁯  Restore session", "<cmd>SessionRestore<CR>"),
+  dashboard.button("p", "󰏖  Plugins", "<cmd>Lazy<CR>"),
+  dashboard.button("c", "⚡ Configuration", "<cmd>e ~/.config/nvim/<CR>"),
   dashboard.button("q", "󰅚  Quit", "<cmd>qa<CR>"),
 }
 
