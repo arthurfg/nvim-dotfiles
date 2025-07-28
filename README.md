@@ -9,7 +9,7 @@ My custom config :)
 mv ~/.config/nvim ~/.config/nvim.backup
 
 # Clone this configuration
-git clone <your-repo-url> ~/.config/nvim
+git clone https://github.com/gu-maia/nvim-dotfiles ~/.config/nvim
 
 # Start Neovim (plugins will auto-install)
 nvim
@@ -18,12 +18,12 @@ nvim
 ## 📦 Core Plugins
 
 ### Plugin Manager
-- **[lazy.nvim](https://github.com/folke/lazy.nvim)** - Fast and modern plugin manager
+- **[lazy.nvim](https://github.com/folke/lazy.nvim)**
 
 ### UI & Aesthetics
 - **[alpha-nvim](https://github.com/goolord/alpha-nvim)** - Customizable startup screen with colorized art
-- **[catppuccin](https://github.com/catppuccin/nvim)** - Warm, elegant colorscheme (Frappe variant)
-- **[lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)** - Sleek statusline
+- **[catppuccin](https://github.com/catppuccin/nvim)** - Colorscheme
+- **[lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)** - Statusline
 - **[nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua)** - File explorer sidebar
 - **[which-key.nvim](https://github.com/folke/which-key.nvim)** - Keymap discovery popup
 
