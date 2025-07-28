@@ -132,4 +132,3 @@ nvim
 
 - **[LightningNvim](https://github.com/nxtkofi/LightningNvim)** - For the img2art tool and inspiration
 - **[Asthestarsfalll](https://github.com/Asthestarsfalll/img2art)** - Original img2art repository
-- **Mushoku Tensei** - For the amazing characters and world that inspired this theme
