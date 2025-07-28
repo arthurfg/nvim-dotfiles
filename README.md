@@ -1,6 +1,6 @@
 My custom config :) 
 
-![Preview](preview.png) <!-- Add a screenshot here later -->
+![Preview](https://github.com/gu-maia/nvim-dotfiles/blob/main/assets/example.png?raw=true)
 
 ## 🚀 Quick Setup
 
