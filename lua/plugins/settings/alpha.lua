@@ -17,17 +17,15 @@ dashboard.section.buttons.val = {
   dashboard.button("q", "󰅚  Quit", "<cmd>qa<CR>"),
 }
 
--- Footer with a quote (you can change this to Mushoku Tensei quotes)
+-- Footer with plugin count and time
 local function footer()
   local total_plugins = require("lazy").stats().count
-  local datetime = os.date(" %d-%m-%Y   %H:%M:%S")
-  local version = vim.version()
-  local nvim_version_info = "   v" .. version.major .. "." .. version.minor .. "." .. version.patch
-
-  return datetime .. "   " .. total_plugins .. " plugins" .. nvim_version_info
+  local time = os.date("%H:%M")
+  return string.format("󰏖 %d plugins  󰃭 %s", total_plugins, time)
 end
 
 dashboard.section.footer.val = footer()
+dashboard.section.footer.opts.hl = "String"
 
 -- Layout
 dashboard.config.layout = {
