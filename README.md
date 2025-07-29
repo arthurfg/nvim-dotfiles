@@ -1,7 +1,6 @@
 My custom config :) 
 
-![Preview](https://github.com/gu-maia/nvim-dotfiles/blob/main/assets/dashboard.png?raw=true)
-
+![Preview](https://github.com/gu-maia/nvim-dotfiles/blob/main/assets/dashboard2.png?raw=true)
 ## 🚀 Quick Setup
 
 ```bash
