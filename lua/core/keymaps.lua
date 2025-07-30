@@ -20,3 +20,6 @@ vim.keymap.set("n", "<C-f>", builtin.live_grep, { desc = "Telescope: General Gre
 -- Manter os padrões em <leader>
 vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Telescope: Find files (all)" })
 vim.keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "Telescope: Grep (all files)" })
+
+-- Hardtime toggle
+vim.keymap.set("n", "<leader>ht", "<cmd>lua toggle_hardtime()<CR>", { desc = "Toggle Hardtime" })
