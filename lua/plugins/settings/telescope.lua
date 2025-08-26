@@ -1,5 +1,6 @@
 local telescope = require("telescope")
 local actions = require("telescope.actions")
+local lga_actions = require("telescope-live-grep-args.actions")
 
 -- Ainda falta configurar o scroll do preview..
 
@@ -30,6 +31,24 @@ telescope.setup({
       hidden = true,
     },
   },
+  extensions = {
+    live_grep_args = {
+      auto_quoting = true, -- enable/disable auto-quoting
+      -- define mappings, e.g.
+      mappings = { -- extend mappings
+        i = {
+          ["<C-i>"] = lga_actions.quote_prompt({ postfix = " --iglob " }),
+          -- freeze the current list and start a fuzzy search in the frozen list
+          ["<C-space>"] = lga_actions.to_fuzzy_refine,
+        },
+      },
+      -- ... also accepts theme settings, for example:
+      -- theme = "dropdown", -- use dropdown theme
+      -- theme = { }, -- use own theme spec
+      -- layout_config = { mirror=true }, -- mirror preview pane
+    }
+  }
 })
 
 telescope.load_extension("fzf")
+telescope.load_extension("live_grep_args")

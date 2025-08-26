@@ -1,11 +1,18 @@
 local alpha = require("alpha")
 local dashboard = require("alpha.themes.dashboard")
 
--- Load the colorized art which returns {header = header}
-local art = require("art.sylph")
-
--- Use the colorized header from the art file
-dashboard.section.header = art.header
+dashboard.section.header.val = {
+[[                                                                       ]],
+[[                                                                     ]],
+[[       ████ ██████           █████      ██                     ]],
+[[      ███████████             █████                             ]],
+[[      █████████ ███████████████████ ███   ███████████   ]],
+[[     █████████  ███    █████████████ █████ ██████████████   ]],
+[[    █████████ ██████████ █████████ █████ █████ ████ █████   ]],
+[[  ███████████ ███    ███ █████████ █████ █████ ████ █████  ]],
+[[ ██████  █████████████████████ ████ █████ █████ ████ ██████ ]],
+[[                                                                       ]],
+}
 
 -- Menu items
 dashboard.section.buttons.val = {

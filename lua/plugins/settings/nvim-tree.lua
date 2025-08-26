@@ -13,7 +13,9 @@ local function my_on_attach(bufnr)
 
   api.config.mappings.default_on_attach(bufnr)
 
-  vim.keymap.set("n", "<C-t>", api.tree.toggle, opts("Toggle Tree"))
+  vim.keymap.set("n", "<leader>e", api.tree.toggle, opts("Toggle Tree"))
+  vim.keymap.set("n", "h", api.node.navigate.parent_close, opts("Close Directory"))
+  vim.keymap.set("n", "l", api.node.open.edit, opts("Open"))
 end
 
 require("nvim-tree").setup({

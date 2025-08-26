@@ -1,7 +1,6 @@
 vim.opt.number = true            -- mostra número absoluto
 vim.opt.relativenumber = true    -- números relativos (bom pra navegar com j/k)
 
-vim.opt.tabstop = 2              -- número de espaços que o <Tab> "parece"
 vim.opt.shiftwidth = 2           -- número de espaços ao indentar com >>
 vim.opt.expandtab = true         -- converte <Tab> em espaços
 vim.opt.smartindent = true       -- indentação automática inteligente
